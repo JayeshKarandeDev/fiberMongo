@@ -12,5 +12,6 @@ func SetRoutes(app *fiber.App) {
 
 	})
 	app.Get("/users", controller.GetUsers)
+	app.Get("/cars", controller.GetCars)
 
 }
