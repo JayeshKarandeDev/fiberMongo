@@ -5,6 +5,8 @@ import (
 	controller "github.com/jayesh.karande.dev/fibreMongo/controllers"
 )
 
-func userRoutes(app *fiber.App) {
-	app.Get("/users", controller.GetUsers)
+func carRoutes(app *fiber.App) {
+	app.Get("/cars", controller.GetCars)
+	app.Get("/car", controller.GetCar)
+
 }
